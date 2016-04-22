@@ -1,0 +1,9 @@
+[Inputs]
+clk_50MHz
+pushButton
+[Outputs]
+pushButtonDB
+[BiDir]
+[ATTRIBUTES]
+VeriModel debouncer
+

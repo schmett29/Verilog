@@ -1,0 +1,59 @@
+ISim log file
+Running: C:\Users\schmette\Desktop\lab8dwe\lab8dwe_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/schmette/Desktop/lab8dwe/lab8dwe_testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Zero: 1, F:   010, A: 00000000, B: 00000000, Yexpected: 00000000
+Finished circuit initialization process.
+yay success Vectornum 0
+Zero: 0, F:   010, A: 00000000, B: ffffffff, Yexpected: ffffffff
+yay success Vectornum 1
+Zero: 1, F:   010, A: 00000001, B: ffffffff, Yexpected: 00000000
+yay success Vectornum 2
+Zero: 0, F:   010, A: 000000ff, B: 00000001, Yexpected: 00000100
+yay success Vectornum 3
+Zero: 1, F:   110, A: 00000000, B: 00000000, Yexpected: 00000000
+yay success Vectornum 4
+Zero: 0, F:   110, A: 00000000, B: ffffffff, Yexpected: 00000001
+yay success Vectornum 5
+Zero: 1, F:   110, A: 00000001, B: 00000001, Yexpected: 00000000
+yay success Vectornum 6
+Zero: 0, F:   110, A: 00000100, B: 00000001, Yexpected: 000000ff
+yay success Vectornum 7
+Zero: 1, F:   111, A: 00000000, B: 00000000, Yexpected: 00000000
+yay success Vectornum 8
+Zero: 0, F:   111, A: 00000000, B: 00000001, Yexpected: 00000001
+yay success Vectornum 9
+Zero: 1, F:   111, A: 00000000, B: ffffffff, Yexpected: 00000000
+# run 1.00us
+yay success Vectornum 10
+Zero: 1, F:   111, A: 00000001, B: 00000000, Yexpected: 00000000
+yay success Vectornum 11
+Zero: 0, F:   111, A: ffffffff, B: 00000000, Yexpected: 00000001
+yay success Vectornum 12
+Zero: 0, F:   000, A: ffffffff, B: ffffffff, Yexpected: ffffffff
+yay success Vectornum 13
+Zero: 0, F:   000, A: ffffffff, B: 12345678, Yexpected: 12345678
+yay success Vectornum 14
+Zero: 0, F:   000, A: 12345678, B: 87654321, Yexpected: 02244220
+yay success Vectornum 15
+Zero: 1, F:   000, A: 00000000, B: ffffffff, Yexpected: 00000000
+yay success Vectornum 16
+Zero: 0, F:   001, A: ffffffff, B: ffffffff, Yexpected: ffffffff
+yay success Vectornum 17
+Zero: 0, F:   001, A: 12345678, B: 87654321, Yexpected: 97755779
+yay success Vectornum 18
+Zero: 0, F:   001, A: 00000000, B: ffffffff, Yexpected: ffffffff
+yay success Vectornum 19
+Zero: 1, F:   001, A: 00000000, B: 00000000, Yexpected: 00000000
+# run 1.00us
+yay success Vectornum 20
+test completed yo
+Stopped at time : 2050 ns : File "C:/Users/schmette/Desktop/lab8dwe/lab8dwe_testbench.v" Line 93

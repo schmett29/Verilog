@@ -1,0 +1,9 @@
+MODULE top_extra
+	SUBMODULE dwe_ring
+		INSTANCE XLXI_1
+	SUBMODULE debouncer
+		INSTANCE XLXI_2
+	SUBMODULE debouncer
+		INSTANCE XLXI_3
+	SUBMODULE SevenSegment
+		INSTANCE XLXI_4

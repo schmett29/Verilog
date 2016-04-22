@@ -1,0 +1,401 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : PRELABTRIAL2.vf
+// /___/   /\     Timestamp : 09/20/2015 19:24:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.vf -w C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.sch
+//Design Name: PRELABTRIAL2
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_PRELABTRIAL2(D0, 
+                                 D1, 
+                                 S0, 
+                                 O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab03_dwe_MUSER_PRELABTRIAL2(A0, 
+                                    Q0);
+
+    input A0;
+   output Q0;
+   
+   wire XLXN_2;
+   wire XLXN_7;
+   
+   (* HU_SET = "XLXI_1_26" *) 
+   M2_1_MXILINX_PRELABTRIAL2  XLXI_1 (.D0(XLXN_2), 
+                                     .D1(XLXN_7), 
+                                     .S0(A0), 
+                                     .O(Q0));
+   GND  XLXI_4 (.G(XLXN_7));
+   VCC  XLXI_5 (.P(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_PRELABTRIAL2(D0, 
+                                  D1, 
+                                  E, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M8_1E_MXILINX_PRELABTRIAL2(D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  D4, 
+                                  D5, 
+                                  D6, 
+                                  D7, 
+                                  E, 
+                                  S0, 
+                                  S1, 
+                                  S2, 
+                                  O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input D4;
+    input D5;
+    input D6;
+    input D7;
+    input E;
+    input S0;
+    input S1;
+    input S2;
+   output O;
+   
+   wire M01;
+   wire M03;
+   wire M23;
+   wire M45;
+   wire M47;
+   wire M67;
+   
+   (* HU_SET = "I_M01_30" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M01 (.D0(D0), 
+                                     .D1(D1), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M01));
+   MUXF5_L  I_M03 (.I0(M01), 
+                  .I1(M23), 
+                  .S(S1), 
+                  .LO(M03));
+   (* HU_SET = "I_M23_29" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M23 (.D0(D2), 
+                                     .D1(D3), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M23));
+   (* HU_SET = "I_M45_28" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M45 (.D0(D4), 
+                                     .D1(D5), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M45));
+   MUXF5_L  I_M47 (.I0(M45), 
+                  .I1(M67), 
+                  .S(S1), 
+                  .LO(M47));
+   (* HU_SET = "I_M67_27" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M67 (.D0(D6), 
+                                     .D1(D7), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M67));
+   MUXF6  I_O (.I0(M03), 
+              .I1(M47), 
+              .S(S2), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module Q4_MUSER_PRELABTRIAL2(A0, 
+                             A1, 
+                             A2, 
+                             A3, 
+                             Q4);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output Q4;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_16;
+   wire XLXN_17;
+   
+   (* HU_SET = "XLXI_1_31" *) 
+   M8_1E_MXILINX_PRELABTRIAL2  XLXI_1 (.D0(XLXN_16), 
+                                      .D1(XLXN_8), 
+                                      .D2(XLXN_17), 
+                                      .D3(XLXN_9), 
+                                      .D4(A0), 
+                                      .D5(XLXN_10), 
+                                      .D6(XLXN_11), 
+                                      .D7(XLXN_13), 
+                                      .E(XLXN_14), 
+                                      .S0(A1), 
+                                      .S1(A2), 
+                                      .S2(A3), 
+                                      .O(Q4));
+   VCC  XLXI_2 (.P(XLXN_14));
+   GND  XLXI_7 (.G(XLXN_8));
+   GND  XLXI_8 (.G(XLXN_9));
+   GND  XLXI_9 (.G(XLXN_10));
+   GND  XLXI_10 (.G(XLXN_11));
+   GND  XLXI_11 (.G(XLXN_13));
+   VCC  XLXI_13 (.P(XLXN_16));
+   INV  XLXI_14 (.I(A0), 
+                .O(XLXN_17));
+endmodule
+`timescale 1ns / 1ps
+
+module Q3_MUSER_PRELABTRIAL2(A0, 
+                             A1, 
+                             A2, 
+                             A3, 
+                             Q3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output Q3;
+   
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_19;
+   
+   (* HU_SET = "XLXI_1_32" *) 
+   M8_1E_MXILINX_PRELABTRIAL2  XLXI_1 (.D0(XLXN_12), 
+                                      .D1(XLXN_13), 
+                                      .D2(A0), 
+                                      .D3(A0), 
+                                      .D4(XLXN_14), 
+                                      .D5(A0), 
+                                      .D6(A0), 
+                                      .D7(XLXN_19), 
+                                      .E(XLXN_15), 
+                                      .S0(A1), 
+                                      .S1(A2), 
+                                      .S2(A3), 
+                                      .O(Q3));
+   GND  XLXI_2 (.G(XLXN_12));
+   GND  XLXI_3 (.G(XLXN_14));
+   VCC  XLXI_4 (.P(XLXN_15));
+   VCC  XLXI_5 (.P(XLXN_13));
+   GND  XLXI_6 (.G(XLXN_19));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_PRELABTRIAL2(D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  E, 
+                                  S0, 
+                                  S1, 
+                                  O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_34" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M01 (.D0(D0), 
+                                     .D1(D1), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M01));
+   (* HU_SET = "I_M23_33" *) 
+   M2_1E_MXILINX_PRELABTRIAL2  I_M23 (.D0(D2), 
+                                     .D1(D3), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module q2_MUSER_PRELABTRIAL2(A0, 
+                             A1, 
+                             A2, 
+                             A3, 
+                             Q2);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output Q2;
+   
+   wire XLXN_1;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   (* HU_SET = "XLXI_1_35" *) 
+   M4_1E_MXILINX_PRELABTRIAL2  XLXI_1 (.D0(XLXN_10), 
+                                      .D1(XLXN_9), 
+                                      .D2(XLXN_8), 
+                                      .D3(XLXN_7), 
+                                      .E(XLXN_1), 
+                                      .S0(A3), 
+                                      .S1(A2), 
+                                      .O(Q2));
+   VCC  XLXI_2 (.P(XLXN_1));
+   AND2  XLXI_3 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_9));
+   AND2  XLXI_4 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_8));
+   XOR2  XLXI_5 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_7));
+   GND  XLXI_6 (.G(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module q1_MUSER_PRELABTRIAL2(A0, 
+                             A1, 
+                             Q1);
+
+    input A0;
+    input A1;
+   output Q1;
+   
+   wire XLXN_4;
+   wire XLXN_6;
+   
+   (* HU_SET = "XLXI_1_36" *) 
+   M2_1_MXILINX_PRELABTRIAL2  XLXI_1 (.D0(XLXN_4), 
+                                     .D1(XLXN_6), 
+                                     .S0(A0), 
+                                     .O(Q1));
+   INV  XLXI_4 (.I(A1), 
+               .O(XLXN_4));
+   GND  XLXI_5 (.G(XLXN_6));
+endmodule
+`timescale 1ns / 1ps
+
+module PRELABTRIAL2(A0, 
+                    A1, 
+                    A2, 
+                    A3, 
+                    QQ0, 
+                    QQ1, 
+                    QQ2, 
+                    QQ3, 
+                    QQ4);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output QQ0;
+   output QQ1;
+   output QQ2;
+   output QQ3;
+   output QQ4;
+   
+   
+   q1_MUSER_PRELABTRIAL2  XLXI_2 (.A0(A0), 
+                                 .A1(A1), 
+                                 .Q1(QQ1));
+   q2_MUSER_PRELABTRIAL2  XLXI_3 (.A0(A0), 
+                                 .A1(A1), 
+                                 .A2(A2), 
+                                 .A3(A3), 
+                                 .Q2(QQ2));
+   Q3_MUSER_PRELABTRIAL2  XLXI_4 (.A0(A0), 
+                                 .A1(A1), 
+                                 .A2(A2), 
+                                 .A3(A3), 
+                                 .Q3(QQ3));
+   Q4_MUSER_PRELABTRIAL2  XLXI_5 (.A0(A0), 
+                                 .A1(A1), 
+                                 .A2(A2), 
+                                 .A3(A3), 
+                                 .Q4(QQ4));
+   Lab03_dwe_MUSER_PRELABTRIAL2  XLXI_6 (.A0(A0), 
+                                        .Q0(QQ0));
+endmodule

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\luem\Desktop\lab03_dwe\lab03_dwe\PRELAB.ncd
+OUTFILE=C:\Users\luem\Desktop\lab03_dwe\lab03_dwe\PRELAB.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=C:\Users\luem\Desktop\lab03_dwe\lab03_dwe
+LICENSE=WebPack
+USER_INFO=176324865_0_0_112

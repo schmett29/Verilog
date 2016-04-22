@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\bowditcw\Desktop\lab06_dwe\top_dwe.ncd
+OUTFILE=C:\Users\bowditcw\Desktop\lab06_dwe\top_dwe.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=C:\Users\bowditcw\Desktop\lab06_dwe
+LICENSE=WebPack
+USER_INFO=176324865_0_0_112

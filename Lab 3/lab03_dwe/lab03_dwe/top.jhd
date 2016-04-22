@@ -1,0 +1,3 @@
+MODULE top
+	SUBMODULE alarmcontroller
+		INSTANCE xl12

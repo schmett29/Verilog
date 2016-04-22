@@ -1,0 +1,130 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : q2.vf
+// /___/   /\     Timestamp : 09/20/2015 19:24:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/q2.vf -w C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/q2.sch
+//Design Name: q2
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_q2(D0, 
+                        D1, 
+                        E, 
+                        S0, 
+                        O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_q2(D0, 
+                        D1, 
+                        D2, 
+                        D3, 
+                        E, 
+                        S0, 
+                        S1, 
+                        O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_2" *) 
+   M2_1E_MXILINX_q2  I_M01 (.D0(D0), 
+                           .D1(D1), 
+                           .E(E), 
+                           .S0(S0), 
+                           .O(M01));
+   (* HU_SET = "I_M23_1" *) 
+   M2_1E_MXILINX_q2  I_M23 (.D0(D2), 
+                           .D1(D3), 
+                           .E(E), 
+                           .S0(S0), 
+                           .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module q2(A0, 
+          A1, 
+          A2, 
+          A3, 
+          Q2);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output Q2;
+   
+   wire XLXN_1;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   (* HU_SET = "XLXI_1_3" *) 
+   M4_1E_MXILINX_q2  XLXI_1 (.D0(XLXN_10), 
+                            .D1(XLXN_9), 
+                            .D2(XLXN_8), 
+                            .D3(XLXN_7), 
+                            .E(XLXN_1), 
+                            .S0(A3), 
+                            .S1(A2), 
+                            .O(Q2));
+   VCC  XLXI_2 (.P(XLXN_1));
+   AND2  XLXI_3 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_9));
+   AND2  XLXI_4 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_8));
+   XOR2  XLXI_5 (.I0(A0), 
+                .I1(A1), 
+                .O(XLXN_7));
+   GND  XLXI_6 (.G(XLXN_10));
+endmodule

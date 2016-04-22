@@ -1,0 +1,204 @@
+ISim log file
+Running: C:\Users\luem\Desktop\lab03_dwe\lab03_dwe\top_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/top_top_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+TV          0:  sensor:      000000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+Finished circuit initialization process.
+success  TV          0, Actual 1110  Expected 1110
+TV          1:  sensor:      000001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          1, Actual 1110  Expected 1110
+TV          2:  sensor:      000010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          2, Actual 1110  Expected 1110
+TV          3:  sensor:      000011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          3, Actual 1110  Expected 1110
+TV          4:  sensor:      000100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          4, Actual 1110  Expected 1110
+TV          5:  sensor:      000101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          5, Actual 1110  Expected 1110
+TV          6:  sensor:      000110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          6, Actual 1110  Expected 1110
+TV          7:  sensor:      000111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          7, Actual 1110  Expected 1110
+TV          8:  sensor:      001000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          8, Actual 1110  Expected 1110
+TV          9:  sensor:      001001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV          9, Actual 1110  Expected 1110
+TV         10:  sensor:      001010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+# run 100.00us
+success  TV         10, Actual 1110  Expected 1110
+TV         11:  sensor:      001011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         11, Actual 1110  Expected 1110
+TV         12:  sensor:      001100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         12, Actual 1110  Expected 1110
+TV         13:  sensor:      001101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         13, Actual 1110  Expected 1110
+TV         14:  sensor:      001110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         14, Actual 1110  Expected 1110
+TV         15:  sensor:      001111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         15, Actual 1110  Expected 1110
+TV         16:  sensor:      010000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         16, Actual 1110  Expected 1110
+TV         17:  sensor:      010001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         17, Actual 1110  Expected 1110
+TV         18:  sensor:      010010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         18, Actual 1110  Expected 1110
+TV         19:  sensor:      010011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         19, Actual 1110  Expected 1110
+TV         20:  sensor:      010100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         20, Actual 1110  Expected 1110
+TV         21:  sensor:      010101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         21, Actual 1110  Expected 1110
+TV         22:  sensor:      010110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         22, Actual 1110  Expected 1110
+TV         23:  sensor:      010111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         23, Actual 1110  Expected 1110
+TV         24:  sensor:      011000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         24, Actual 1110  Expected 1110
+TV         25:  sensor:      011001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         25, Actual 1110  Expected 1110
+TV         26:  sensor:      011010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         26, Actual 1110  Expected 1110
+TV         27:  sensor:      011011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         27, Actual 1110  Expected 1110
+TV         28:  sensor:      011100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         28, Actual 1110  Expected 1110
+TV         29:  sensor:      011101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         29, Actual 1110  Expected 1110
+TV         30:  sensor:      011110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         30, Actual 1110  Expected 1110
+TV         31:  sensor:      011111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         31, Actual 1110  Expected 1110
+TV         32:  sensor:      100000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         32, Actual 1110  Expected 1110
+TV         33:  sensor:      100001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         33, Actual 1110  Expected 1110
+TV         34:  sensor:      100010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         34, Actual 1110  Expected 1110
+TV         35:  sensor:      100011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         35, Actual 1110  Expected 1110
+TV         36:  sensor:      100100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         36, Actual 1110  Expected 1110
+TV         37:  sensor:      100101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         37, Actual 1110  Expected 1110
+TV         38:  sensor:      100110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         38, Actual 1110  Expected 1110
+TV         39:  sensor:      100111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         39, Actual 1110  Expected 1110
+TV         40:  sensor:      101000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         40, Actual 1110  Expected 1110
+TV         41:  sensor:      101001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         41, Actual 1110  Expected 1110
+TV         42:  sensor:      101010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         42, Actual 1110  Expected 1110
+TV         43:  sensor:      101011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         43, Actual 1110  Expected 1110
+TV         44:  sensor:      101100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         44, Actual 1110  Expected 1110
+TV         45:  sensor:      101101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         45, Actual 1110  Expected 1110
+TV         46:  sensor:      101110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         46, Actual 1110  Expected 1110
+TV         47:  sensor:      101111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         47, Actual 1110  Expected 1110
+TV         48:  sensor:      110000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         48, Actual 1110  Expected 1110
+TV         49:  sensor:      110001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         49, Actual 1110  Expected 1110
+TV         50:  sensor:      110010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         50, Actual 1110  Expected 1110
+TV         51:  sensor:      110011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         51, Actual 1110  Expected 1110
+TV         52:  sensor:      110100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         52, Actual 1110  Expected 1110
+TV         53:  sensor:      110101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         53, Actual 1110  Expected 1110
+TV         54:  sensor:      110110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         54, Actual 1110  Expected 1110
+TV         55:  sensor:      110111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         55, Actual 1110  Expected 1110
+TV         56:  sensor:      111000 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         56, Actual 1110  Expected 1110
+TV         57:  sensor:      111001 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         57, Actual 1110  Expected 1110
+TV         58:  sensor:      111010 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         58, Actual 1110  Expected 1110
+TV         59:  sensor:      111011 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         59, Actual 1110  Expected 1110
+TV         60:  sensor:      111100 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         60, Actual 1110  Expected 1110
+TV         61:  sensor:      111101 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         61, Actual 1110  Expected 1110
+TV         62:  sensor:      111110 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 1 CPouts 0
+success  TV         62, Actual 1110  Expected 1110
+TV         63:  sensor:      111111 Min 0 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         63, Actual 1100  Expected 1100
+TV         64:  sensor:      000000 Min 0 Ain 0 Lin 0    Pin 1 Aout 1 Lout 1 Vout 1 CPouts 1
+success  TV         64, Actual 1111  Expected 1111
+TV         65:  sensor:      111111 Min 0 Ain 0 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         65, Actual 1100  Expected 1100
+TV         66:  sensor:      000000 Min 0 Ain 0 Lin 1    Pin 0 Aout 1 Lout 0 Vout 1 CPouts 0
+success  TV         66, Actual 1010  Expected 1010
+TV         67:  sensor:      111111 Min 0 Ain 0 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         67, Actual 1100  Expected 1100
+TV         68:  sensor:      000000 Min 0 Ain 0 Lin 1    Pin 1 Aout 1 Lout 0 Vout 1 CPouts 1
+success  TV         68, Actual 1011  Expected 1011
+TV         69:  sensor:      111111 Min 0 Ain 0 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         69, Actual 1100  Expected 1100
+TV         70:  sensor:      000000 Min 0 Ain 1 Lin 0    Pin 0 Aout 0 Lout 1 Vout 1 CPouts 0
+success  TV         70, Actual 0110  Expected 0110
+TV         71:  sensor:      111111 Min 0 Ain 1 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         71, Actual 1100  Expected 1100
+TV         72:  sensor:      000000 Min 0 Ain 1 Lin 0    Pin 1 Aout 0 Lout 1 Vout 1 CPouts 1
+success  TV         72, Actual 0111  Expected 0111
+TV         73:  sensor:      111111 Min 0 Ain 1 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         73, Actual 1100  Expected 1100
+TV         74:  sensor:      000000 Min 0 Ain 1 Lin 1    Pin 0 Aout 0 Lout 0 Vout 1 CPouts 0
+success  TV         74, Actual 0010  Expected 0010
+TV         75:  sensor:      111111 Min 0 Ain 1 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         75, Actual 1100  Expected 1100
+TV         76:  sensor:      000000 Min 0 Ain 1 Lin 1    Pin 1 Aout 0 Lout 0 Vout 1 CPouts 1
+success  TV         76, Actual 0011  Expected 0011
+TV         77:  sensor:      111111 Min 0 Ain 1 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         77, Actual 1100  Expected 1100
+TV         78:  sensor:      000000 Min 1 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         78, Actual 1100  Expected 1100
+TV         79:  sensor:      111111 Min 1 Ain 0 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         79, Actual 1100  Expected 1100
+TV         80:  sensor:      000000 Min 1 Ain 0 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         80, Actual 1100  Expected 1100
+TV         81:  sensor:      111111 Min 1 Ain 0 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         81, Actual 1100  Expected 1100
+TV         82:  sensor:      000000 Min 1 Ain 0 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         82, Actual 1100  Expected 1100
+TV         83:  sensor:      111111 Min 1 Ain 0 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         83, Actual 1100  Expected 1100
+TV         84:  sensor:      000000 Min 1 Ain 0 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         84, Actual 1100  Expected 1100
+TV         85:  sensor:      111111 Min 1 Ain 0 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         85, Actual 1100  Expected 1100
+TV         86:  sensor:      000000 Min 1 Ain 1 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         86, Actual 1100  Expected 1100
+TV         87:  sensor:      111111 Min 1 Ain 1 Lin 0    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         87, Actual 1100  Expected 1100
+TV         88:  sensor:      000000 Min 1 Ain 1 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         88, Actual 1100  Expected 1100
+TV         89:  sensor:      111111 Min 1 Ain 1 Lin 0    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         89, Actual 1100  Expected 1100
+TV         90:  sensor:      000000 Min 1 Ain 1 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         90, Actual 1100  Expected 1100
+TV         91:  sensor:      111111 Min 1 Ain 1 Lin 1    Pin 0 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         91, Actual 1100  Expected 1100
+TV         92:  sensor:      000000 Min 1 Ain 1 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         92, Actual 1100  Expected 1100
+TV         93:  sensor:      111111 Min 1 Ain 1 Lin 1    Pin 1 Aout 1 Lout 1 Vout 0 CPouts 0
+success  TV         93, Actual 1100  Expected 1100
+Test completed
+Stopped at time : 9350 ns : File "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/alarmtest.v" Line 80

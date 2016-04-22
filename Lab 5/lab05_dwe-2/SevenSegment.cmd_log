@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/schmette/Desktop/lab05_dwe/SevenSegment.v -lang verilog -prj lab05_dwe -o SevenSegment.spl -module SevenSegment -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 SevenSegment.spl C:/Users/schmette/Desktop/lab05_dwe/SevenSegment.sym 

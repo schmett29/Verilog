@@ -1,0 +1,5 @@
+MODULE final_top_dwe
+	SUBMODULE output_dwe
+		INSTANCE XLXI_1
+	SUBMODULE nso_dwe
+		INSTANCE XLXI_2

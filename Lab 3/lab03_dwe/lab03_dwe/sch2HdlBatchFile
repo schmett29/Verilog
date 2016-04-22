@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan3,-verilog,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/top.vf,-w,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/top.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-verilog,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/alarmcontroller.vf,-w,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/alarmcontroller.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-verilog,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/top.vf,-w,C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/top.sch

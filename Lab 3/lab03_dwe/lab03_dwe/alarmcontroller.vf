@@ -1,0 +1,179 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : alarmcontroller.vf
+// /___/   /\     Timestamp : 09/21/2015 19:09:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/alarmcontroller.vf -w C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/alarmcontroller.sch
+//Design Name: alarmcontroller
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_alarmcontroller(D0, 
+                                     D1, 
+                                     E, 
+                                     S0, 
+                                     O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module AND6_MXILINX_alarmcontroller(I0, 
+                                    I1, 
+                                    I2, 
+                                    I3, 
+                                    I4, 
+                                    I5, 
+                                    O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   AND3  I_36_69 (.I0(I3), 
+                 .I1(I4), 
+                 .I2(I5), 
+                 .O(I35));
+   AND4  I_36_85 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I35), 
+                 .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_93 (.I1(I3), 
+                 .I2(I4), 
+                 .I3(I5), 
+                 .I4(dummy), 
+                 .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_94 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I35), 
+                 .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module alarmcontroller(AlarmSwitch, 
+                       LightSwitch, 
+                       Master, 
+                       PoliceSwitch, 
+                       sensor, 
+                       AlarmOut, 
+                       CallPoliceOut, 
+                       LightsOut, 
+                       VideoOut);
+
+    input AlarmSwitch;
+    input LightSwitch;
+    input Master;
+    input PoliceSwitch;
+    input [5:0] sensor;
+   output AlarmOut;
+   output CallPoliceOut;
+   output LightsOut;
+   output VideoOut;
+   
+   wire XLXN_98;
+   wire XLXN_100;
+   wire XLXN_101;
+   wire XLXN_102;
+   wire XLXN_111;
+   wire XLXN_117;
+   wire XLXN_118;
+   wire XLXN_119;
+   wire XLXN_137;
+   wire XLXN_157;
+   wire XLXN_159;
+   wire XLXN_161;
+   wire XLXN_164;
+   
+   (* HU_SET = "XLXI_3_5" *) 
+   M2_1E_MXILINX_alarmcontroller  XLXI_3 (.D0(LightSwitch), 
+                                         .D1(XLXN_157), 
+                                         .E(XLXN_98), 
+                                         .S0(XLXN_111), 
+                                         .O(XLXN_161));
+   (* HU_SET = "XLXI_5_6" *) 
+   M2_1E_MXILINX_alarmcontroller  XLXI_5 (.D0(AlarmSwitch), 
+                                         .D1(XLXN_159), 
+                                         .E(XLXN_100), 
+                                         .S0(XLXN_111), 
+                                         .O(XLXN_164));
+   (* HU_SET = "XLXI_8_9" *) 
+   M2_1E_MXILINX_alarmcontroller  XLXI_8 (.D0(PoliceSwitch), 
+                                         .D1(XLXN_137), 
+                                         .E(XLXN_101), 
+                                         .S0(XLXN_111), 
+                                         .O(CallPoliceOut));
+   (* HU_SET = "XLXI_11_7" *) 
+   M2_1E_MXILINX_alarmcontroller  XLXI_11 (.D0(XLXN_118), 
+                                          .D1(XLXN_117), 
+                                          .E(XLXN_102), 
+                                          .S0(XLXN_111), 
+                                          .O(VideoOut));
+   VCC  XLXI_29 (.P(XLXN_102));
+   VCC  XLXI_30 (.P(XLXN_101));
+   VCC  XLXI_31 (.P(XLXN_100));
+   VCC  XLXI_33 (.P(XLXN_98));
+   (* HU_SET = "XLXI_51_8" *) 
+   AND6_MXILINX_alarmcontroller  XLXI_51 (.I0(sensor[5]), 
+                                         .I1(sensor[4]), 
+                                         .I2(sensor[3]), 
+                                         .I3(sensor[2]), 
+                                         .I4(sensor[1]), 
+                                         .I5(sensor[0]), 
+                                         .O(XLXN_119));
+   OR2  XLXI_52 (.I0(Master), 
+                .I1(XLXN_119), 
+                .O(XLXN_111));
+   GND  XLXI_54 (.G(XLXN_137));
+   VCC  XLXI_55 (.P(XLXN_118));
+   GND  XLXI_56 (.G(XLXN_117));
+   INV  XLXI_77 (.I(XLXN_161), 
+                .O(LightsOut));
+   INV  XLXI_78 (.I(XLXN_164), 
+                .O(AlarmOut));
+   GND  XLXI_81 (.G(XLXN_157));
+   GND  XLXI_82 (.G(XLXN_159));
+endmodule

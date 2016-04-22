@@ -1,0 +1,4 @@
+verilog work "alarmcontroller.vf"
+verilog work "top.vf"
+verilog work "alarmtest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

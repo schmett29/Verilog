@@ -1,0 +1,29 @@
+Command line:
+   output_dwe_output_dwe_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51135
+
+Thu Oct 22 16:11:55 2015
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 667.476 Meg
+
+ Total Signals          : 317
+ Total Nets             : 62
+ Total Signal Drivers   : 42
+ Total Blocks           : 56
+ Total Primitive Blocks : 48
+ Total Processes        : 47
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 14203
+Total Line Count : 48
+
+ Total Simulation Time: 0.062401 sec
+
+ Current Memory Usage: 667.476 Meg
+
+Thu Oct 22 16:18:05 2015
+

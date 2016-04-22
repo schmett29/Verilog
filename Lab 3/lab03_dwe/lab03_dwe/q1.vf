@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : q1.vf
+// /___/   /\     Timestamp : 09/20/2015 19:24:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/q1.vf -w C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/q1.sch
+//Design Name: q1
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_q1(D0, 
+                       D1, 
+                       S0, 
+                       O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module q1(A0, 
+          A1, 
+          Q1);
+
+    input A0;
+    input A1;
+   output Q1;
+   
+   wire XLXN_4;
+   wire XLXN_6;
+   
+   (* HU_SET = "XLXI_1_4" *) 
+   M2_1_MXILINX_q1  XLXI_1 (.D0(XLXN_4), 
+                           .D1(XLXN_6), 
+                           .S0(A0), 
+                           .O(Q1));
+   INV  XLXI_4 (.I(A1), 
+               .O(XLXN_4));
+   GND  XLXI_5 (.G(XLXN_6));
+endmodule

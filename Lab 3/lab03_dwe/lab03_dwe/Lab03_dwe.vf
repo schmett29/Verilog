@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab03_dwe.vf
+// /___/   /\     Timestamp : 09/20/2015 19:24:08
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/Lab03_dwe.vf -w C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/Lab03_dwe.sch
+//Design Name: Lab03_dwe
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_Lab03_dwe(D0, 
+                              D1, 
+                              S0, 
+                              O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab03_dwe(A0, 
+                 Q0);
+
+    input A0;
+   output Q0;
+   
+   wire XLXN_2;
+   wire XLXN_7;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   M2_1_MXILINX_Lab03_dwe  XLXI_1 (.D0(XLXN_2), 
+                                  .D1(XLXN_7), 
+                                  .S0(A0), 
+                                  .O(Q0));
+   GND  XLXI_4 (.G(XLXN_7));
+   VCC  XLXI_5 (.P(XLXN_2));
+endmodule

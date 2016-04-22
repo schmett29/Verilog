@@ -1,0 +1,5 @@
+verilog work "output_dwe.vf"
+verilog work "nso_dwe.vf"
+verilog work "slowClk.v"
+verilog work "final_top_dwe.vf"
+verilog work "top_dwe.vf"

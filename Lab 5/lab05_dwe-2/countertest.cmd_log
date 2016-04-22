@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/schmette/Desktop/lab05_dwe/countertest.xst" -ofn "C:/Users/schmette/Desktop/lab05_dwe/countertest.syr" 
+vhdtdtfi -lib work C:/Users/schmette/Desktop/lab05_dwe/countertester.v -lang verilog -prj lab05_dwe -o countertest.spl -module countertest -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 countertest.spl C:/Users/schmette/Desktop/lab05_dwe/countertest.sym 

@@ -1,0 +1,29 @@
+Command line:
+   lab8dwe_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50679
+
+Thu Nov 05 22:51:21 2015
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 667.476 Meg
+
+ Total Signals          : 25
+ Total Nets             : 243
+ Total Signal Drivers   : 15
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 2577
+Total Line Count : 54
+
+ Total Simulation Time: 0.109201 sec
+
+ Current Memory Usage: 667.476 Meg
+
+Thu Nov 05 22:58:38 2015
+

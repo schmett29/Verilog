@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.syr" 
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELABTRIAL2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 PRELABTRIAL2.ngc PRELABTRIAL2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o PRELABTRIAL2_map.ncd PRELABTRIAL2.ngd PRELABTRIAL2.pcf 
+par -w -intstyle ise -ol high -t 1 PRELABTRIAL2_map.ncd PRELABTRIAL2.ncd PRELABTRIAL2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PRELABTRIAL2.twx PRELABTRIAL2.ncd -o PRELABTRIAL2.twr PRELABTRIAL2.pcf 
+bitgen -intstyle ise -f PRELABTRIAL2.ut PRELABTRIAL2.ncd 

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 PRELAB.ngc PRELAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o PRELAB_map.ncd PRELAB.ngd PRELAB.pcf 
+par -w -intstyle ise -ol high -t 1 PRELAB_map.ncd PRELAB.ncd PRELAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PRELAB.twx PRELAB.ncd -o PRELAB.twr PRELAB.pcf 
+bitgen -intstyle ise -f PRELAB.ut PRELAB.ncd 
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 PRELAB.ngc PRELAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o PRELAB_map.ncd PRELAB.ngd PRELAB.pcf 
+par -w -intstyle ise -ol high -t 1 PRELAB_map.ncd PRELAB.ncd PRELAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PRELAB.twx PRELAB.ncd -o PRELAB.twr PRELAB.pcf 
+bitgen -intstyle ise -f PRELAB.ut PRELAB.ncd 
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.syr" 
+xst -intstyle ise -ifn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.xst" -ofn "C:/Users/luem/Desktop/lab03_dwe/lab03_dwe/PRELAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 PRELAB.ngc PRELAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o PRELAB_map.ncd PRELAB.ngd PRELAB.pcf 
+par -w -intstyle ise -ol high -t 1 PRELAB_map.ncd PRELAB.ncd PRELAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PRELAB.twx PRELAB.ncd -o PRELAB.twr PRELAB.pcf 

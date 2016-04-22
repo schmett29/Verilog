@@ -1,0 +1,134 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : state_machine_dwe.vf
+// /___/   /\     Timestamp : 10/19/2015 17:44:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/bowditcw/Desktop/lab06_dwe/state_machine_dwe.vf -w C:/Users/bowditcw/Desktop/lab06_dwe/state_machine_dwe.sch
+//Design Name: state_machine_dwe
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module state_machine_dwe(Clock, 
+                         L, 
+                         R, 
+                         Reset, 
+                         LA, 
+                         LB, 
+                         LC, 
+                         RA, 
+                         RB, 
+                         RC);
+
+    input Clock;
+    input L;
+    input R;
+    input Reset;
+   output LA;
+   output LB;
+   output LC;
+   output RA;
+   output RB;
+   output RC;
+   
+   wire XLXN_2;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_71;
+   wire XLXN_76;
+   wire XLXN_77;
+   wire XLXN_78;
+   wire XLXN_79;
+   wire XLXN_99;
+   wire XLXN_107;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(Clock), 
+              .D(XLXN_58), 
+              .Q(XLXN_2));
+   AND2  XLXI_2 (.I0(XLXN_2), 
+                .I1(XLXN_20), 
+                .O(XLXN_21));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(Clock), 
+              .D(XLXN_59), 
+              .Q(XLXN_65));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(Clock), 
+              .D(XLXN_64), 
+              .Q(XLXN_99));
+   FD #( .INIT(1'b0) ) XLXI_5 (.C(Clock), 
+              .D(XLXN_67), 
+              .Q(XLXN_68));
+   FD #( .INIT(1'b0) ) XLXI_6 (.C(Clock), 
+              .D(XLXN_71), 
+              .Q(XLXN_78));
+   FD #( .INIT(1'b0) ) XLXI_7 (.C(Clock), 
+              .D(XLXN_76), 
+              .Q(XLXN_79));
+   FD #( .INIT(1'b0) ) XLXI_8 (.C(Clock), 
+              .D(XLXN_77), 
+              .Q(XLXN_107));
+   XNOR2  XLXI_11 (.I0(R), 
+                  .I1(L), 
+                  .O(XLXN_20));
+   OR4  XLXI_19 (.I0(Reset), 
+                .I1(XLXN_107), 
+                .I2(XLXN_68), 
+                .I3(XLXN_21), 
+                .O(XLXN_58));
+   AND4B2  XLXI_22 (.I0(Reset), 
+                   .I1(R), 
+                   .I2(L), 
+                   .I3(XLXN_2), 
+                   .O(XLXN_59));
+   AND2B1  XLXI_36 (.I0(Reset), 
+                   .I1(XLXN_65), 
+                   .O(XLXN_64));
+   AND2B1  XLXI_37 (.I0(Reset), 
+                   .I1(XLXN_99), 
+                   .O(XLXN_67));
+   AND4B2  XLXI_41 (.I0(Reset), 
+                   .I1(L), 
+                   .I2(R), 
+                   .I3(XLXN_2), 
+                   .O(XLXN_71));
+   AND2B1  XLXI_42 (.I0(Reset), 
+                   .I1(XLXN_78), 
+                   .O(XLXN_76));
+   AND2B1  XLXI_43 (.I0(Reset), 
+                   .I1(XLXN_79), 
+                   .O(XLXN_77));
+   OR3  XLXI_44 (.I0(XLXN_65), 
+                .I1(XLXN_99), 
+                .I2(XLXN_68), 
+                .O(LA));
+   OR3  XLXI_45 (.I0(XLXN_78), 
+                .I1(XLXN_79), 
+                .I2(XLXN_107), 
+                .O(RA));
+   OR2  XLXI_46 (.I0(XLXN_79), 
+                .I1(XLXN_107), 
+                .O(RB));
+   OR2  XLXI_47 (.I0(XLXN_99), 
+                .I1(XLXN_68), 
+                .O(LB));
+   BUF  XLXI_48 (.I(XLXN_68), 
+                .O(LC));
+   BUF  XLXI_49 (.I(XLXN_107), 
+                .O(RC));
+endmodule

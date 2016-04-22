@@ -1,0 +1,8 @@
+[Inputs]
+clk_50MHz
+[Outputs]
+slowClk
+[BiDir]
+[ATTRIBUTES]
+VeriModel slowClk
+

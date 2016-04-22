@@ -1,0 +1,5 @@
+MODULE top_dwe
+	SUBMODULE slowClk
+		INSTANCE XLXI_2
+	SUBMODULE final_top_dwe
+		INSTANCE XLXI_9

@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 
+xst -intstyle ise -ifn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.xst" -ofn "C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 top_dwe.ngc top_dwe.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_dwe_map.ncd top_dwe.ngd top_dwe.pcf 
+par -w -intstyle ise -ol high -t 1 top_dwe_map.ncd top_dwe.ncd top_dwe.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_dwe.twx top_dwe.ncd -o top_dwe.twr top_dwe.pcf 
+bitgen -intstyle ise -f top_dwe.ut top_dwe.ncd 

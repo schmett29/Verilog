@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 22 16:33:21 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LA" LOCATE = SITE "F15" LEVEL 1;
+COMP "LB" LOCATE = SITE "P12" LEVEL 1;
+COMP "LC" LOCATE = SITE "M10" LEVEL 1;
+COMP "RA" LOCATE = SITE "H1" LEVEL 1;
+COMP "RB" LOCATE = SITE "J1" LEVEL 1;
+COMP "RC" LOCATE = SITE "J2" LEVEL 1;
+COMP "Brake" LOCATE = SITE "J4" LEVEL 1;
+COMP "Clock" LOCATE = SITE "P8" LEVEL 1;
+COMP "Reset" LOCATE = SITE "K4" LEVEL 1;
+COMP "L" LOCATE = SITE "K3" LEVEL 1;
+COMP "R" LOCATE = SITE "K2" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

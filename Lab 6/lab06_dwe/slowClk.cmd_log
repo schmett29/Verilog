@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/bowditcw/Desktop/lab06_dwe/slowClk.v -lang verilog -prj lab06_dwe -o slowClk.spl -module slowClk -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 slowClk.spl C:/Users/bowditcw/Desktop/lab06_dwe/slowClk.sym 

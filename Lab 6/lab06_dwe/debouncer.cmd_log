@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/bowditcw/Desktop/lab06_dwe/debouncer.v -lang verilog -prj lab06_dwe -o debouncer.spl -module debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 debouncer.spl C:/Users/bowditcw/Desktop/lab06_dwe/debouncer.sym 

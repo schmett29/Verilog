@@ -1,0 +1,496 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top_dwe.vf
+// /___/   /\     Timestamp : 10/22/2015 16:33:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.vf -w C:/Users/bowditcw/Desktop/lab06_dwe/top_dwe.sch
+//Design Name: top_dwe
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module nso_dwe_MUSER_top_dwe(L, 
+                             R, 
+                             Reset, 
+                             S, 
+                             Sn);
+
+    input L;
+    input R;
+    input Reset;
+    input [6:0] S;
+   output [6:0] Sn;
+   
+   wire XLXN_18;
+   wire XLXN_19;
+   
+   AND2  XLXI_2 (.I0(S[0]), 
+                .I1(XLXN_19), 
+                .O(XLXN_18));
+   XNOR2  XLXI_3 (.I0(R), 
+                 .I1(L), 
+                 .O(XLXN_19));
+   OR4  XLXI_96 (.I0(Reset), 
+                .I1(S[6]), 
+                .I2(S[3]), 
+                .I3(XLXN_18), 
+                .O(Sn[0]));
+   AND2B1  XLXI_167 (.I0(Reset), 
+                    .I1(S[1]), 
+                    .O(Sn[2]));
+   AND2B1  XLXI_168 (.I0(Reset), 
+                    .I1(S[2]), 
+                    .O(Sn[3]));
+   AND4B2  XLXI_169 (.I0(Reset), 
+                    .I1(L), 
+                    .I2(R), 
+                    .I3(S[0]), 
+                    .O(Sn[4]));
+   AND4B2  XLXI_170 (.I0(R), 
+                    .I1(Reset), 
+                    .I2(L), 
+                    .I3(S[0]), 
+                    .O(Sn[1]));
+   AND2B1  XLXI_171 (.I0(Reset), 
+                    .I1(S[4]), 
+                    .O(Sn[5]));
+   AND2B1  XLXI_172 (.I0(Reset), 
+                    .I1(S[5]), 
+                    .O(Sn[6]));
+endmodule
+`timescale 1ns / 1ps
+
+module OR12_MXILINX_top_dwe(I0, 
+                            I1, 
+                            I2, 
+                            I3, 
+                            I4, 
+                            I5, 
+                            I6, 
+                            I7, 
+                            I8, 
+                            I9, 
+                            I10, 
+                            I11, 
+                            O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+    input I8;
+    input I9;
+    input I10;
+    input I11;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire S2;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_29 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I3), 
+                 .O(S0));
+   OR4  I_36_110 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   OR4  I_36_127 (.I0(I4), 
+                 .I1(I5), 
+                 .I2(I6), 
+                 .I3(I7), 
+                 .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_138 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_142 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(S2), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+   OR4  I_36_151 (.I0(I8), 
+                 .I1(I9), 
+                 .I2(I10), 
+                 .I3(I11), 
+                 .O(S2));
+   OR3  I_36_182 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(S2), 
+                 .O(O_DUMMY));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_187 (.I1(I8), 
+                  .I2(I9), 
+                  .I3(I10), 
+                  .I4(I11), 
+                  .O(S2));
+endmodule
+`timescale 1ns / 1ps
+
+module OR8_MXILINX_top_dwe(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           I6, 
+                           I7, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_91 (.I1(S0), 
+                 .I2(S1), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(O_DUMMY));
+   OR2  I_36_94 (.I0(S0), 
+                .I1(S1), 
+                .O(O_DUMMY));
+   OR4  I_36_95 (.I0(I4), 
+                .I1(I5), 
+                .I2(I6), 
+                .I3(I7), 
+                .O(S1));
+   OR4  I_36_112 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_116 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I3), 
+                  .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_117 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+endmodule
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_top_dwe(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module output_dwe_MUSER_top_dwe(Brake, 
+                                S, 
+                                LA, 
+                                LB, 
+                                LC, 
+                                RA, 
+                                RB, 
+                                RC);
+
+    input Brake;
+    input [6:0] S;
+   output LA;
+   output LB;
+   output LC;
+   output RA;
+   output RB;
+   output RC;
+   
+   wire A0;
+   wire A1;
+   wire A2;
+   wire A3;
+   wire A4;
+   wire A5;
+   wire A6;
+   wire XLXN_104;
+   wire XLXN_105;
+   wire XLXN_106;
+   wire XLXN_107;
+   
+   (* HU_SET = "XLXI_8_0" *) 
+   OR6_MXILINX_top_dwe  XLXI_8 (.I0(S[3]), 
+                               .I1(A6), 
+                               .I2(A5), 
+                               .I3(A4), 
+                               .I4(A3), 
+                               .I5(A0), 
+                               .O(LC));
+   AND2  XLXI_9 (.I0(S[0]), 
+                .I1(Brake), 
+                .O(A0));
+   AND2  XLXI_10 (.I0(S[1]), 
+                 .I1(Brake), 
+                 .O(A1));
+   AND2  XLXI_11 (.I0(S[2]), 
+                 .I1(Brake), 
+                 .O(A2));
+   AND2  XLXI_12 (.I0(S[3]), 
+                 .I1(Brake), 
+                 .O(A3));
+   AND2  XLXI_13 (.I0(S[4]), 
+                 .I1(Brake), 
+                 .O(A4));
+   AND2  XLXI_15 (.I0(S[5]), 
+                 .I1(Brake), 
+                 .O(A5));
+   AND2  XLXI_16 (.I0(S[6]), 
+                 .I1(Brake), 
+                 .O(A6));
+   (* HU_SET = "XLXI_19_1" *) 
+   OR8_MXILINX_top_dwe  XLXI_19 (.I0(S[3]), 
+                                .I1(S[2]), 
+                                .I2(A6), 
+                                .I3(A5), 
+                                .I4(A4), 
+                                .I5(A3), 
+                                .I6(A2), 
+                                .I7(A0), 
+                                .O(LB));
+   (* HU_SET = "XLXI_20_2" *) 
+   OR12_MXILINX_top_dwe  XLXI_20 (.I0(XLXN_105), 
+                                 .I1(XLXN_104), 
+                                 .I2(S[3]), 
+                                 .I3(S[2]), 
+                                 .I4(S[1]), 
+                                 .I5(A6), 
+                                 .I6(A5), 
+                                 .I7(A4), 
+                                 .I8(A3), 
+                                 .I9(A2), 
+                                 .I10(A1), 
+                                 .I11(A0), 
+                                 .O(LA));
+   (* HU_SET = "XLXI_21_3" *) 
+   OR6_MXILINX_top_dwe  XLXI_21 (.I0(S[6]), 
+                                .I1(A6), 
+                                .I2(A3), 
+                                .I3(A2), 
+                                .I4(A1), 
+                                .I5(A0), 
+                                .O(RC));
+   (* HU_SET = "XLXI_22_4" *) 
+   OR8_MXILINX_top_dwe  XLXI_22 (.I0(S[6]), 
+                                .I1(S[5]), 
+                                .I2(A6), 
+                                .I3(A5), 
+                                .I4(A3), 
+                                .I5(A2), 
+                                .I6(A1), 
+                                .I7(A0), 
+                                .O(RB));
+   (* HU_SET = "XLXI_23_5" *) 
+   OR12_MXILINX_top_dwe  XLXI_23 (.I0(XLXN_107), 
+                                 .I1(XLXN_106), 
+                                 .I2(S[6]), 
+                                 .I3(S[5]), 
+                                 .I4(S[4]), 
+                                 .I5(A6), 
+                                 .I6(A5), 
+                                 .I7(A4), 
+                                 .I8(A3), 
+                                 .I9(A2), 
+                                 .I10(A1), 
+                                 .I11(A0), 
+                                 .O(RA));
+   GND  XLXI_24 (.G(XLXN_104));
+   GND  XLXI_25 (.G(XLXN_105));
+   GND  XLXI_26 (.G(XLXN_106));
+   GND  XLXI_27 (.G(XLXN_107));
+endmodule
+`timescale 1ns / 1ps
+
+module final_top_dwe_MUSER_top_dwe(Brake, 
+                                   Clock, 
+                                   L, 
+                                   R, 
+                                   Reset, 
+                                   LA, 
+                                   LB, 
+                                   LC, 
+                                   RA, 
+                                   RB, 
+                                   RC);
+
+    input Brake;
+    input Clock;
+    input L;
+    input R;
+    input Reset;
+   output LA;
+   output LB;
+   output LC;
+   output RA;
+   output RB;
+   output RC;
+   
+   wire [6:0] S;
+   wire [6:0] Sn;
+   
+   output_dwe_MUSER_top_dwe  XLXI_1 (.Brake(Brake), 
+                                    .S(S[6:0]), 
+                                    .LA(LA), 
+                                    .LB(LB), 
+                                    .LC(LC), 
+                                    .RA(RA), 
+                                    .RB(RB), 
+                                    .RC(RC));
+   nso_dwe_MUSER_top_dwe  XLXI_2 (.L(L), 
+                                 .R(R), 
+                                 .Reset(Reset), 
+                                 .S(S[6:0]), 
+                                 .Sn(Sn[6:0]));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(Clock), 
+              .D(Sn[0]), 
+              .Q(S[0]));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(Clock), 
+              .D(Sn[1]), 
+              .Q(S[1]));
+   FD #( .INIT(1'b0) ) XLXI_5 (.C(Clock), 
+              .D(Sn[2]), 
+              .Q(S[2]));
+   FD #( .INIT(1'b0) ) XLXI_6 (.C(Clock), 
+              .D(Sn[3]), 
+              .Q(S[3]));
+   FD #( .INIT(1'b0) ) XLXI_7 (.C(Clock), 
+              .D(Sn[4]), 
+              .Q(S[4]));
+   FD #( .INIT(1'b0) ) XLXI_8 (.C(Clock), 
+              .D(Sn[5]), 
+              .Q(S[5]));
+   FD #( .INIT(1'b0) ) XLXI_9 (.C(Clock), 
+              .D(Sn[6]), 
+              .Q(S[6]));
+endmodule
+`timescale 1ns / 1ps
+
+module top_dwe(Brake, 
+               Clock, 
+               L, 
+               R, 
+               Reset, 
+               LA, 
+               LB, 
+               LC, 
+               RA, 
+               RB, 
+               RC);
+
+   (* LOC = "J4" *) 
+    input Brake;
+   (* LOC = "P8" *) 
+    input Clock;
+   (* LOC = "K3" *) 
+    input L;
+   (* LOC = "K2" *) 
+    input R;
+   (* LOC = "K4" *) 
+    input Reset;
+   (* LOC = "F15" *) 
+   output LA;
+   (* LOC = "P12" *) 
+   output LB;
+   (* LOC = "M10" *) 
+   output LC;
+   (* LOC = "H1" *) 
+   output RA;
+   (* LOC = "J1" *) 
+   output RB;
+   (* LOC = "J2" *) 
+   output RC;
+   
+   wire slowClock;
+   
+   slowClk  XLXI_2 (.clk_50MHz(Clock), 
+                   .slowClk(slowClock));
+   final_top_dwe_MUSER_top_dwe  XLXI_9 (.Brake(Brake), 
+                                       .Clock(slowClock), 
+                                       .L(L), 
+                                       .R(R), 
+                                       .Reset(Reset), 
+                                       .LA(LA), 
+                                       .LB(LB), 
+                                       .LC(LC), 
+                                       .RA(RA), 
+                                       .RB(RB), 
+                                       .RC(RC));
+endmodule

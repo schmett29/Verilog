@@ -1,0 +1,44 @@
+ISim log file
+Running: C:\Users\bowditcw\Desktop\lab06_dwe\output_dwe_output_dwe_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/bowditcw/Desktop/lab06_dwe/output_dwe_output_dwe_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+S:      0000001 Break:0 LCe :0 LBe :0 LAe :0 RAe 0 RBe 0 RCe 0
+Finished circuit initialization process.
+yay success Actual 000000 Expected 000000
+S:      0000010 Break:0 LCe :0 LBe :0 LAe :1 RAe 0 RBe 0 RCe 0
+yay success Actual 001000 Expected 001000
+S:      0000100 Break:0 LCe :0 LBe :1 LAe :1 RAe 0 RBe 0 RCe 0
+yay success Actual 011000 Expected 011000
+S:      0001000 Break:0 LCe :1 LBe :1 LAe :1 RAe 0 RBe 0 RCe 0
+yay success Actual 111000 Expected 111000
+S:      0010000 Break:0 LCe :0 LBe :0 LAe :0 RAe 1 RBe 0 RCe 0
+yay success Actual 000100 Expected 000100
+S:      0100000 Break:0 LCe :0 LBe :0 LAe :0 RAe 1 RBe 1 RCe 0
+yay success Actual 000110 Expected 000110
+S:      1000000 Break:0 LCe :0 LBe :0 LAe :0 RAe 1 RBe 1 RCe 1
+yay success Actual 000111 Expected 000111
+S:      0000001 Break:1 LCe :1 LBe :1 LAe :1 RAe 1 RBe 1 RCe 1
+yay success Actual 111111 Expected 111111
+S:      0000010 Break:1 LCe :0 LBe :0 LAe :1 RAe 1 RBe 1 RCe 1
+yay success Actual 001111 Expected 001111
+S:      0000100 Break:1 LCe :0 LBe :1 LAe :1 RAe 1 RBe 1 RCe 1
+yay success Actual 011111 Expected 011111
+S:      0001000 Break:1 LCe :1 LBe :1 LAe :1 RAe 1 RBe 1 RCe 1
+# run 1.00us
+yay success Actual 111111 Expected 111111
+S:      0010000 Break:1 LCe :1 LBe :1 LAe :1 RAe 1 RBe 0 RCe 0
+yay success Actual 111100 Expected 111100
+S:      0100000 Break:1 LCe :1 LBe :1 LAe :1 RAe 1 RBe 1 RCe 0
+yay success Actual 111110 Expected 111110
+S:      1000000 Break:1 LCe :1 LBe :1 LAe :1 RAe 1 RBe 1 RCe 1
+yay success Actual 111111 Expected 111111
+Test completed yo
+Stopped at time : 1350 ns : File "C:/Users/bowditcw/Desktop/lab06_dwe/output_final_test_dwe.v" Line 73
